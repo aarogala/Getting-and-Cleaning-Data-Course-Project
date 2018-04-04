@@ -19,26 +19,26 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+tBodyAcc-XYZ<br />
+tGravityAcc-XYZ<br />
+tBodyAccJerk-XYZ<br />
+tBodyGyro-XYZ<br />
+tBodyGyroJerk-XYZ<br />
+tBodyAccMag<br />
+tGravityAccMag<br />
+tBodyAccJerkMag<br />
+tBodyGyroMag<br />
+tBodyGyroJerkMag<br />
+fBodyAcc-XYZ<br />
+fBodyAccJerk-XYZ<br />
+fBodyGyro-XYZ<br />
+fBodyAccMag<br />
+fBodyAccJerkMag<br />
+fBodyGyroMag<br />
+fBodyGyroJerkMag<br />
 
 The set of variables that are included in file analysis.txt are
 were estimated from these signals are: 
 
-mean_: average of the mean value estimated from these signals (for each activity and each subject)
+mean_: average of the mean value estimated from these signals (for each activity and each subject)<br />
 std_: average of the standard deviation value estimated from these signals (for each activity and each subject)
