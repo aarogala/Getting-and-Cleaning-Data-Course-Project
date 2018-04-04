@@ -1,8 +1,3 @@
-setwd('C:/Users/Ola/Dysk Google/Coursera/Getting and cleaning data/projekt')
-getwd()
-
-download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip',
-              destfile = 'C:/Users/Ola/Desktop/temp/Samsung.zip')
 
 labels_test<-read.table('UCI HAR Dataset/test/y_test.txt')
 labels_train<-read.table('UCI HAR Dataset/train/y_train.txt')
