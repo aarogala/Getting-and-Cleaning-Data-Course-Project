@@ -8,30 +8,14 @@ activity_labels<-read.table('UCI HAR Dataset/activity_labels.txt')
 subject_test<-read.table('UCI HAR Dataset/test/subject_test.txt')
 subject_train<-read.table('UCI HAR Dataset/train/subject_train.txt')
 
-# dim(subject_test)
-# dim(subject_train)
-# 
-# head(subject_test)
-# head(subject_train)
-# 
-# table(subject_test[,1])
-# table(subject_train[,1])
-# 
-# dim(labels_test)
-# dim(test)
-# 
-# dim(labels_train)
-# dim(train)
+
 
 test_labeled<-cbind(test,labels_test,subject_test)
 train_labeled<-cbind(train,labels_train,subject_train)
 
-# dim(test_labeled)
-# dim(train_labeled)
 
 data<-rbind(test_labeled,train_labeled)
 
-# dim(data)
 
 features[,2]<-gsub('\\(\\)','',features[,2])
 features[,2]<-gsub('-','_',features[,2])
@@ -41,7 +25,6 @@ colnames(data)<-c(as.character(features[,2]),'label','subject')
 library(plyr)
 data$activity_labels<-mapvalues(data$label,from=activity_labels[,1],to=as.character(activity_labels[,2]))
 
-# dim(data)
 data_reduced<-data[,c(grep('mean',colnames(data)), grep('std',colnames(data)),562:564)]
 
 library(dplyr)
